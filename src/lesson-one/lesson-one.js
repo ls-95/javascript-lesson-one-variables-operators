@@ -27,32 +27,31 @@ console.log(
 let cats = 25;
 let dogs = 30;
 
-cats += 1;
+cats += dogs;
+console.log(cats);
+cats -= dogs;
+console.log(cats);
+cats *= dogs;
+console.log(cats);
+cats /= dogs;
+console.log(cats);
+
+cats--;
+dogs--;
+console.log(cats, dogs);
+console.log(typeof cats);
+console.log(typeof dogs);
+
+cats++;
+dogs++;
+console.log(cats, dogs);
+
+cats += 5;
 console.log(cats);
 dogs -= 5;
 console.log(dogs);
 
-let horse = 5;
-let rabbit = 10;
-
-let x;
-let y;
-x = horse * rabbit;
-console.log(x);
-y = horse / rabbit;
-console.log(y);
-
-x++;
-y++;
-console.log(x, y);
-
-x--;
-y--;
-console.log(x, y);
-console.log(typeof x);
-console.log(typeof y);
-
-cats -= 1;
+cats -= 5;
 cats %= 2;
 console.log(cats % 2);
 
