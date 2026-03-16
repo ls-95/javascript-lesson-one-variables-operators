@@ -65,7 +65,6 @@ main {
 h1 {
   font-size: 52px;
   padding-bottom: 2em;
-  text-decoration: underline;
 }
 
 label {
@@ -80,25 +79,29 @@ button {
   border-radius: 20px;
 }
 
+input:focus {
+  background-color: #d6def7;
+}
+
 button {
-  background-color: blue;
+  background-color: blueviolet;
   color: aliceblue;
   cursor: pointer;
   font-weight: bold;
 }
 
 button:hover {
-  background-color: rgb(66, 66, 255);
+  background-color: rgb(164, 97, 227);
 }
 
 button:active {
-  background-color: rgb(0, 0, 162);
+  background-color: rgb(117, 1, 226);
   position: relative;
   top: 2px;
 }
 
 .result {
-  min-height: 5vh;
+  min-height: 10vh;
   font-size: 1.5em;
   font-weight: bold;
   padding-top: 2em;
