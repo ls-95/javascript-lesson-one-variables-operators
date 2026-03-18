@@ -58,5 +58,20 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+  font-weight: bold;
+}
+
+h1 {
+  padding-bottom: 2em;
+}
+
+p {
+  font-size: 1.5em;
+  padding-bottom: 0.5em;
+  font-weight: 400;
+}
+
+span {
   font-weight: bold;
 }
