@@ -56,7 +56,38 @@ body {
 main {
   min-height: 90vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   font-weight: bold;
+}
+
+.intro-text {
+  text-align: center;
+  font-weight: 400;
+}
+
+.counter-number {
+  font-size: 24px;
+  margin: 2em 0;
+}
+
+.btn-container {
+  background-color: rgb(222, 221, 221);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+button {
+  font-size: 16px;
+  font-weight: bold;
+  padding: 1em 2em;
+  background-color: blueviolet;
+  color: #fff;
+  border-radius: 20px;
+  border: none;
+  margin: 0.5em;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  cursor: pointer;
 }
