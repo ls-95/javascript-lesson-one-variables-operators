@@ -18,3 +18,21 @@ function handleCounter(operation) {
   }
   counterNumber.textContent = number;
 }
+
+console.log(
+  "The password must be at least 8 characters, not contain the username or spaces",
+);
+
+function isValidPassword(password, username) {
+  return password.length >= 8 &&
+    password.toLowerCase() !== username.toLowerCase() &&
+    !password.includes(" ")
+    ? true
+    : false;
+}
+console.log(isValidPassword("cryingmonkey", "cryingmonkey"));
+console.log(isValidPassword("bunny", "cryingmonkey"));
+console.log(isValidPassword("happy bunny", "cryingmonkey"));
+console.log(isValidPassword("everythingisawesome", "cryingmonkey"));
+console.log(isValidPassword("CryinGMonKey", "cryingmonkey"));
+console.log(isValidPassword("HelloWorld", "cryingmonkey"));
