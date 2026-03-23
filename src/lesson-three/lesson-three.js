@@ -24,15 +24,20 @@ console.log(
 );
 
 function isValidPassword(password, username) {
-  return password.length >= 8 &&
+  // return password.length >= 8 &&
+  //   password.toLowerCase() !== username.toLowerCase() &&
+  //   !password.includes(" ")
+  //   ? true
+  //   : false;
+  return (
+    password.length >= 8 &&
     password.toLowerCase() !== username.toLowerCase() &&
     !password.includes(" ")
-    ? true
-    : false;
+  );
 }
-console.log(isValidPassword("cryingmonkey", "cryingmonkey"));
-console.log(isValidPassword("bunny", "cryingmonkey"));
-console.log(isValidPassword("happy bunny", "cryingmonkey"));
-console.log(isValidPassword("everythingisawesome", "cryingmonkey"));
-console.log(isValidPassword("CryinGMonKey", "cryingmonkey"));
-console.log(isValidPassword("HelloWorld", "cryingmonkey"));
+console.log(isValidPassword("jumpingmonkey", "jumpingmonkey"));
+console.log(isValidPassword("bunny", "jumpingmonkey"));
+console.log(isValidPassword("happy bunny", "jumpingmonkey"));
+console.log(isValidPassword("everythingisawesome", "jumpingmonkey"));
+console.log(isValidPassword("JumpinGmonkey", "jumpingmonkey"));
+console.log(isValidPassword("HelloWorld", "jumpingmonkey"));
