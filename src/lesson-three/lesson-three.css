@@ -68,8 +68,15 @@ main {
 }
 
 .counter-number {
+  text-align: center;
+  line-height: 100px;
   font-size: 24px;
   margin: 2em 0;
+  background-color: #4169e1;
+  min-width: 100px;
+  min-height: 100px;
+  border-radius: 20px;
+  color: #fff;
 }
 
 .btn-container {
@@ -90,4 +97,15 @@ button {
   margin: 0.5em;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   cursor: pointer;
+  transition: all 0.2s ease-in;
+}
+
+button:hover {
+  background-color: rgb(156, 93, 215);
+}
+
+button:active {
+  position: relative;
+  top: 2px;
+  background-color: rgb(117, 0, 226);
 }
