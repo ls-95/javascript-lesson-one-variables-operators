@@ -35,3 +35,19 @@ generateRandomArray(5);
 generateRandomArray(10);
 generateRandomArray(2);
 generateRandomArray(7);
+
+//Exercise 3
+
+function sumEvenNumbers(array) {
+  let evenSum = 0;
+  for (let i = 0; i <= array.length; i++) {
+    if (array[i] % 2 === 0) {
+      evenSum += array[i];
+    }
+  }
+  console.log(evenSum);
+}
+
+sumEvenNumbers([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]);
+sumEvenNumbers([1, 2, 4, 25, 26, 84]);
+sumEvenNumbers([31, 8, 7, 16, 95]);
