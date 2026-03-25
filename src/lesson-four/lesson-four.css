@@ -55,8 +55,70 @@ body {
 
 main {
   min-height: 90vh;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   font-weight: bold;
+}
+
+h2 {
+  font-size: 1.75em;
+  text-align: center;
+}
+
+h1 {
+  padding: 3em 2em 1em 2em;
+  font-size: 2.5em;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.convert-container {
+  display: flex;
+  flex-direction: column;
+}
+
+input,
+button {
+  padding: 1em 2em;
+  margin: 1em;
+  border-radius: 20px;
+  font-size: 1em;
+}
+
+input {
+  border: 2px solid #c9c9c9;
+}
+
+input::placeholder {
+  color: #c9c9c9;
+}
+
+button {
+  background-color: #4169e1;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+  border: none;
+  transition: all 0.2s ease-in;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #6581d4;
+}
+
+button:active {
+  background-color: #2150dc;
 }
