@@ -1,24 +1,67 @@
+let input = document.getElementById("number");
+let result = document.getElementById("result");
+
+function handleConversion() {
+  let inputValue = input.value.trim();
+  let inputNumber = Number(inputValue);
+  const romanNumerals = [
+    ["M", 1000],
+    ["CM", 900],
+    ["D", 500],
+    ["CD", 400],
+    ["C", 100],
+    ["XC", 90],
+    ["L", 50],
+    ["XL", 40],
+    ["X", 10],
+    ["IX", 9],
+    ["V", 5],
+    ["IV", 4],
+    ["I", 1],
+  ];
+
+  if (
+    inputValue === "" ||
+    isNaN(inputNumber) ||
+    !Number.isInteger(inputNumber) ||
+    inputNumber <= 0 ||
+    inputNumber > 3999
+  ) {
+    alert("Please enter a valid number whole number (no decimals)");
+    return;
+  }
+
+  result.textContent = "";
+
+  for (let i = 0; i < romanNumerals.length; i++) {
+    while (inputNumber >= romanNumerals[i][1]) {
+      inputNumber -= romanNumerals[i][1];
+      result.textContent += romanNumerals[i][0];
+    }
+  }
+}
+
 //Exercise one
 
-// function guessNumberGame() {
-//   const target = Math.floor(Math.random() * 10) + 1;
-//   let guess = null;
+function guessNumberGame() {
+  const target = Math.floor(Math.random() * 10) + 1;
+  let guess = null;
 
-//   while (guess !== target) {
-//     guess = parseFloat(prompt("Enter a number"));
+  while (guess !== target) {
+    guess = parseFloat(prompt("Enter a number"));
 
-//     console.log(`The target is: ${target}. Your guess is: ${guess}`);
+    console.log(`The target is: ${target}. Your guess is: ${guess}`);
 
-//     if (guess < target) {
-//       console.log("You guess was too low");
-//     } else if (guess > target) {
-//       console.log("You guess was too high");
-//     } else {
-//       console.log(`Congratualtions, you guessed the correct number: ${guess}`);
-//     }
-//   }
-// }
-// guessNumberGame();
+    if (guess < target) {
+      console.log("You guess was too low");
+    } else if (guess > target) {
+      console.log("You guess was too high");
+    } else {
+      console.log(`Congratualtions, you guessed the correct number: ${guess}`);
+    }
+  }
+}
+guessNumberGame();
 
 //Exercise 2
 
