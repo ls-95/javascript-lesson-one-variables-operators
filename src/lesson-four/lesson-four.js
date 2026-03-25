@@ -19,3 +19,19 @@ function guessNumberGame() {
   }
 }
 guessNumberGame();
+
+//Exercise 2
+
+function generateRandomArray(length) {
+  let randomArray = [];
+  for (let i = 0; i <= length - 1; i++) {
+    let randomNumber = Math.floor(Math.random() * 100) + 1;
+    randomArray.push(randomNumber);
+  }
+  console.log(randomArray);
+}
+
+generateRandomArray(5);
+generateRandomArray(10);
+generateRandomArray(2);
+generateRandomArray(7);
